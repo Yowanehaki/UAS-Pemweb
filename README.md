@@ -426,29 +426,29 @@ Implementasi di class Connection dengan metode construct(), getConnection(), dan
 1. **Registrasi Akun**:
 
    - Buat akun di InfinityFree (infinityfree.com)
+   - lalu verifikasi lewat email yang di daftarin
    - Pilih paket hosting gratis
 
 2. **Persiapan File**:
-
-   - Compress semua file project ke dalam ZIP
+   - Siapkan semua file pastikan tidak ada yang eror
    - Pastikan struktur folder sudah benar
 
 3. **Upload dan Konfigurasi**:
 
    - Login ke control panel InfinityFree
-   - Upload file ZIP melalui File Manager
-   - Extract file di public_html
-   - Buat database MySQL dan import struktur tabel
+   - Upload file/folder yang telah kita siapkan
+   - Upload di htdocs nama dari web kita
+   - Buat database MySQL dan import struktur tabel di Admin my SQL database yang terdapat di Control panel
 
 4. **Konfigurasi Database**:
 
    - Update file database.php dengan kredensial yang diberikan InfinityFree:
 
    ```php
-   $host = 'SQL.infinityfree.com';
-   $dbname = '[nama_database]';
-   $username = '[username_database]';
-   $password = '[password_database]';
+        $servername = "sql305.infinityfree.com";
+        $username = "if0_37972962";
+        $password = "6cELUBzP9ng39";
+        $database = "if0_37972962_sample_db";
    ```
 
 5. **Keamanan**:
@@ -460,7 +460,7 @@ Implementasi di class Connection dengan metode construct(), getConnection(), dan
    - Regular backup database
 
 6. **Testing**:
-   - Cek semua fitur berfungsi
-   - Pastikan form dapat menyimpan data
-   - Verifikasi session dan cookie berjalan
-   - Test performa website
+   - Cek semua fitur berfungsi dengan baik
+   - Pastikan form dapat menyimpan data, form dapat menyimpan data 
+   - Verifikasi session dan cookie berjalan sesaui dengan website
+   - Test performa website (Website Sederhana)

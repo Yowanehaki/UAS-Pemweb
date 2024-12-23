@@ -360,7 +360,17 @@ Implementasi di class Connection dengan metode construct(), getConnection(), dan
 ### 4.2 Pengelolaan State dengan Cookie (10%)
 
 ```php
-function getCookie(name) {
+ // Fungsi untuk menyetel cookie
+        function setCookie(name, value, days) {
+            const date = new Date();
+            date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+            document.cookie = `${name}=${encodeURIComponent(value)};expires=${date.toUTCString()};path=/`;
+            alert(`Cookie "${name}" berhasil disimpan!`);
+            updateDisplayedCookie(name);
+        }
+
+        // Fungsi untuk mendapatkan cookie tertentu
+        function getCookie(name) {
             const cookies = document.cookie.split('; ').reduce((acc, cookie) => {
                 const [key, val] = cookie.split('=');
                 acc[key] = decodeURIComponent(val);

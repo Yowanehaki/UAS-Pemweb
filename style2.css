@@ -1,0 +1,65 @@
+body {
+    background-color: #20232a;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: #2b2f3a;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: #61dafb; /* Biru khas */
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+input, select {
+    background-color: #343a40;
+    color: #ffffff;
+    border: 1px solid #495057;
+}
+
+input:focus, select:focus {
+    border-color: #61dafb;
+    box-shadow: 0 0 0 0.2rem rgba(97, 218, 251, 0.5);
+}
+
+button {
+    background-color: #61dafb;
+    color: #2b2f3a;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #42a5f5;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #61dafb;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    color: #42a5f5;
+}

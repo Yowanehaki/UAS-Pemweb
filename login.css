@@ -1,0 +1,93 @@
+ /* Latar belakang halaman */
+ body {
+    background-image: url('public/G1.jpg'); /* Ganti 'G1.jpg' dengan path gambar Anda */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Kartu login */
+.login-card {
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(105, 10, 10, 0.3); /* Efek bayangan */
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(20px);
+}
+
+.login-card h3 {
+    font-family: 'Roboto', sans-serif;font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    
+}
+input::placeholder {
+    color: rgba(243, 239, 239, 0.7);
+}
+input:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid #f09819;
+    outline: none;
+}
+.form-label{
+    font-family: 'Poppins', sans-serif;
+}
+.form-control{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* Tombol */
+.btn-primary {
+    background: linear-gradient(90deg, #ff512f, #f09819);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #f09819, #196d43);
+}
+
+/* Pesan error */
+.error {
+    background: rgba(255, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .login-card {
+        padding: 20px;
+        box-shadow: none; /* Menghapus bayangan di perangkat kecil */
+    }
+
+    body {
+        padding: 10px; /* Memberikan jarak agar tidak terlalu mepet */
+    }
+}

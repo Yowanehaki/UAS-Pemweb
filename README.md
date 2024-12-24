@@ -468,8 +468,35 @@ Implementasi di class Connection dengan metode construct(), getConnection(), dan
    - Enkripsi data sensitif
    - Regular backup database
 
-6. **Testing**:
-   - Cek semua fitur berfungsi dengan baik
-   - Pastikan form dapat menyimpan data, form dapat menyimpan data 
-   - Verifikasi session dan cookie berjalan sesaui dengan website
-   - Test performa website (Website Sederhana)
+6. ## Hosting Configuration
+
+### Hosting Provider
+- Aplikasi ini di-host menggunakan **InfinityFree**, yang menyediakan server berbasis Linux dengan dukungan PHP dan MySQL.
+
+### Database Configuration
+- **Hostname**: `sql305.infinityfree.com`
+- **Database**: MySQL yang terhubung dengan akun hosting menggunakan username dan password.
+
+### File Configuration
+- **FTP** digunakan untuk mengunggah file frontend dan backend ke hosting server.
+- Semua file aplikasi diletakkan di dalam direktori `htdocs`.
+
+### PHP Settings
+- **Versi PHP**: 7.4+ untuk kompatibilitas kode.
+- Menyesuaikan pengaturan `php.ini` seperti menonaktifkan `display_errors` untuk keamanan.
+
+### SSL/TLS
+- Memanfaatkan **sertifikat SSL gratis** yang disediakan oleh InfinityFree untuk mengamankan akses melalui HTTPS.
+
+### File Structure
+- Struktur direktori ditata untuk keamanan:
+  - `/config`: File konfigurasi database.
+  - `/process`: File backend untuk pemrosesan (add, delete, edit).
+  - `/public`: File frontend seperti HTML, CSS, dan JavaScript.
+
+### Error Handling
+- Log error dicatat di file log hosting dan **tidak ditampilkan** ke pengguna akhir untuk mencegah kebocoran informasi sensitif.
+
+### Backup dan Monitoring
+- Secara rutin, file dan database di-backup menggunakan fitur backup bawaan dari **InfinityFree** atau diunduh secara manual.
+

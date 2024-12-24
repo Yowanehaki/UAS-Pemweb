@@ -460,15 +460,7 @@ Implementasi di class Connection dengan metode construct(), getConnection(), dan
         $database = "if0_37972962_sample_db";
    ```
 
-5. **Keamanan**:
-
-   - Gunakan HTTPS
-   - Implementasi validasi input
-   - Gunakan prepared statements
-   - Enkripsi data sensitif
-   - Regular backup database
-
-6. ## Hosting Configuration
+ ## Hosting Configuration
 
 ### Hosting Provider
 - Aplikasi ini di-host menggunakan **InfinityFree**, yang menyediakan server berbasis Linux dengan dukungan PHP dan MySQL.

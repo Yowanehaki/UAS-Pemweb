@@ -482,17 +482,10 @@ Implementasi di class Connection dengan metode construct(), getConnection(), dan
 - Semua file aplikasi diletakkan di dalam direktori `htdocs`.
 
 ### PHP Settings
-- **Versi PHP**: 7.4+ untuk kompatibilitas kode.
 - Menyesuaikan pengaturan `php.ini` seperti menonaktifkan `display_errors` untuk keamanan.
 
 ### SSL/TLS
 - Memanfaatkan **sertifikat SSL gratis** yang disediakan oleh InfinityFree untuk mengamankan akses melalui HTTPS.
-
-### File Structure
-- Struktur direktori ditata untuk keamanan:
-  - `/config`: File konfigurasi database.
-  - `/process`: File backend untuk pemrosesan (add, delete, edit).
-  - `/public`: File frontend seperti HTML, CSS, dan JavaScript.
 
 ### Error Handling
 - Log error dicatat di file log hosting dan **tidak ditampilkan** ke pengguna akhir untuk mencegah kebocoran informasi sensitif.

@@ -468,6 +468,8 @@ Implementasi di class Connection dengan metode construct(), getConnection(), dan
            1. Google Trust : Keamanan pada chrome google
            2. ZeroSSL  
            3. GoGetSSL : Agar aman dan bisa digunakan di browser manapun
+
+        Setelah semua telah terpasang atau salah satu dari diatas maka penggunaan HTTPS://mulfi-uas.wuaze.com bisa digunakan
    ```
  ## Hosting Configuration
 

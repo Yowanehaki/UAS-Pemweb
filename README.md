@@ -459,7 +459,16 @@ Implementasi di class Connection dengan metode construct(), getConnection(), dan
         $password = "6cELUBzP9ng39";
         $database = "if0_37972962_sample_db";
    ```
+5. **SSL / Keamanan web**:
 
+   - Pada Infinity Free bisa membuat certificate SSL dan di order sambil menunggu order tersebut
+
+   ```SSL
+        SSL yang saya request yaitu :
+           1. Google Trust : Keamanan pada chrome google
+           2. ZeroSSL  
+           3. GoGetSSL : Agar aman dan bisa digunakan di browser manapun
+   ```
  ## Hosting Configuration
 
 ### Hosting Provider

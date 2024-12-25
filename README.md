@@ -5,7 +5,7 @@ Project Data Mahasiswa -   Sistem Pendaftaran dan CRUD
 Oleh : Mulfi Hazwi Artaf - 122140186 - Pemrograman Web RA
 
 LINK
-## httpS://mulfi-uas.wuaze.com/
+## https://mulfi-uas.wuaze.com/
 
 LOGIN
 ```
